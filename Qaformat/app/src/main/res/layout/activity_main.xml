@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_weight="30"
+            android:id="@+id/version"
+            android:hint="Build: "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_weight="70"
+            android:id="@+id/leapID"
+            android:hint="LEAP - XXXX"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/leapDesc"
+        android:hint="Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn"
+        android:text="Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Result gonna showing here....\nTry: \n1. create ALL story first \n2. then ALL what did we do second, \nor opposite way.\nThis app is not smart enough to handle alternate way yet XD."
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:textColorHint="#ffffff"
+        android:id="@+id/result"
+        android:background="#666666"
+        android:gravity="top"
+        android:textColor="#FFFFFF"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="270dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/leapSubDesc"
+            android:layout_weight="30"
+            android:hint="What did we do"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+        <Button
+            android:id="@+id/addDesc"
+            android:layout_weight="70"
+            android:text="Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/clear"
+            android:layout_weight="70"
+            android:text="CLEAR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/finish"
+            android:layout_weight="30"
+            android:text="FINISH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>
