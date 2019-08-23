@@ -2,6 +2,7 @@
 
 #### PARENT STORY/DEFECT
 [LEAP - 1](https://bankunited.atlassian.net/browse/leap-1): *test title*
+
 [LEAP - 2](https://bankunited.atlassian.net/browse/leap-2): *test title2*
 #### What did we do?
 
