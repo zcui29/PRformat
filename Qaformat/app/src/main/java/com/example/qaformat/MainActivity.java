@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         finish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                s3 = result.getText().toString();
                 result.setText("**_BUILD: "+version.getText()+"_**\n" + s3 +
                         "\n#### QA Checklist\n" +
                         "- [x] Development is completed on this task to the best of my knowledge\n" +
